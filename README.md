@@ -1,1 +1,1 @@
-# paradigma
+
