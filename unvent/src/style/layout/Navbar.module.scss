@@ -1,0 +1,67 @@
+@import "../components/burgerMenu.module";
+
+.wrapper, .contain {
+  height: 35px;
+  width: 100%;
+  margin: 40px 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper a {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.6875rem;
+  color: #282728;
+  font-weight: bold;
+  font-family: "UniNeueBold", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.wrapper a:hover {
+  border-bottom: 1px solid #313d4b;
+}
+
+@media screen and (max-width:1166px) and (min-width: 960px){
+  .contain {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+  }
+  .wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 961px) and (min-width: 766px){
+  .contain {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+  }
+  .wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .contain {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+  }
+  .wrapper {
+    margin-bottom: 14px;
+  }
+}
+// Laptop
+@media screen and (max-height:600px) {
+  .wrapper {
+    margin-bottom: 29px;
+  }
+}
+@media screen and (max-height:800px) {
+  .wrapper {
+    margin: 40px 0 61px;
+  }
+}

@@ -1,0 +1,87 @@
+.consultButton {
+  width: 244px;
+  height: 70px;
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #313d4b;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "UniNeueBold",sans-serif;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -5.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: black;
+    color: #fff;
+    border-bottom: 4px solid darken(black, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(18.5em);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+.calcButton {
+  display: flex;
+  align-items: center;
+  width: 425px;
+  height: 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  filter: drop-shadow(0px 19px 24.5px rgba(254,88,81,0.1)) drop-shadow(0px 4px 0px #e63c3c);
+  background-image: linear-gradient(0deg, #fd4f4f 0%, #fd734f 100%);
+  font-family: "UniNeueBold", sans-serif;
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 28px 47px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -5.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-image: linear-gradient(0deg, #fd4f4f 0%, #fd734f 100%);
+    color: #fff;
+    border-bottom: 1px solid darken(white, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(30.5em);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}

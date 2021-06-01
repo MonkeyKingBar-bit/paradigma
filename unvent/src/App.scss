@@ -1,0 +1,145 @@
+@import "style/layout/Header.module";
+@import "style/layout/Navbar.module";
+@import "style/layout/Main.module";
+@import "style/base/fonts";
+@import "style/components/burgerMenu.module";
+@import "components/Modal/modal.module";
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: url("assets/images/background.png");
+  background-size: cover;
+  font-family: 'UniNeueRegular', sans-serif;
+}
+.app-wrapper {
+  max-width: 1570px;
+  margin: 0 auto;
+}
+.app-wrapper-content {
+  width: 46vw;
+}
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.modal.active {
+  display: flex;
+  transform: scale(1);
+  z-index: 10000;
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 50vw;
+}
+.modal__content.active {
+  z-index: 10000;
+  transform: scale(1);
+  background-color: rgba(0,0,0,0.5);
+}
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(-170%);
+}
+.menu.active {
+  transform: translateX(0);
+}
+.blur {
+  width: 100vw;
+  height: 100vh;
+  left: 70%;
+  backdrop-filter: blur(2px);
+  position: absolute;
+}
+.menu__content {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+}
+ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1730px) and (min-width: 1614px){
+  .app-wrapper-content {
+    width: 57vw;
+  }
+}
+@media screen and (max-width:1615px) and (min-width: 1350px){
+  .app-wrapper {
+    max-width: 1225px;
+  }
+  .contact {
+    font-size: 0.9375rem!important;
+  }
+  .app-wrapper-content {
+    width: 72vw;
+  }
+}
+@media screen and (max-width:1351px) and (min-width: 1165px) {
+  .app-wrapper {
+    max-width: 1110px;
+  }
+  .app-wrapper-content {
+    width: 84vw;
+  }
+}
+@media screen and (max-width:1166px) and (min-width: 959px){
+  .app-wrapper {
+    max-width: 906px;
+  }
+  .app-wrapper-content {
+    width: 84vw;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 766px){
+  .app-wrapper {
+    max-width: 699px;
+  }
+  .app-wrapper-content {
+    width: 76vw;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .app-wrapper {
+    max-width: 480px;
+  }
+  .app-wrapper-content {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+// Laptop

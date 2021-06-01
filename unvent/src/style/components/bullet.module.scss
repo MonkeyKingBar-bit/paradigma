@@ -1,0 +1,62 @@
+@import "../base/colors";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  color: $color-primary;
+  font-family: "UniNeueThin", sans-serif;
+}
+.item img {
+  height: 22px;
+  width: 22px;
+  padding-right: 9px;
+}
+.contentText {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.contentText p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.contentText strong {
+  font-size: 1.25rem;
+  font-family: "UniNeueBold", sans-serif;
+  padding-left: 0;
+}
+.contentBoldBig {
+  font-size: 3.75rem;
+  font-family: "UniNeueHeavy",sans-serif;
+  padding-right: 15px;
+}
+.content img {
+  padding-right: 9px;
+}
+.firstImg {
+  padding-right: 0!important;
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+  }
+  .contentBoldBig {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-height:600px){
+  .wrapper {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-height:800px) {
+  .wrapper {
+    margin-bottom: 48px;
+  }
+}
