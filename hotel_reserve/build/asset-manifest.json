@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82bac8c2.chunk.css",
+    "main.js": "/static/js/main.e28f796e.chunk.js",
+    "main.js.map": "/static/js/main.e28f796e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83b914a8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83b914a8.js.map",
+    "static/js/2.c1efbc81.chunk.js": "/static/js/2.c1efbc81.chunk.js",
+    "static/js/2.c1efbc81.chunk.js.map": "/static/js/2.c1efbc81.chunk.js.map",
+    "static/js/3.e0e2b6ea.chunk.js": "/static/js/3.e0e2b6ea.chunk.js",
+    "static/js/3.e0e2b6ea.chunk.js.map": "/static/js/3.e0e2b6ea.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.82bac8c2.chunk.css.map": "/static/css/main.82bac8c2.chunk.css.map",
+    "static/js/2.c1efbc81.chunk.js.LICENSE.txt": "/static/js/2.c1efbc81.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/static/media/background.780a57b8.png",
+    "static/media/deer.eb4dfac6.png": "/static/media/deer.eb4dfac6.png",
+    "static/media/Booking.module.css": "/static/media/small-calendar.a0a1f36e.svg",
+    "static/media/user-2.c7d3b9bd.svg": "/static/media/user-2.c7d3b9bd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83b914a8.js",
+    "static/js/2.c1efbc81.chunk.js",
+    "static/css/main.82bac8c2.chunk.css",
+    "static/js/main.e28f796e.chunk.js"
+  ]
+}
