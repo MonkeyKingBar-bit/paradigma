@@ -1,0 +1,63 @@
+@import 'src/style/components/buttons';
+@import '../base/colors';
+
+.wrapper {}
+.calcLicense {
+  display: flex;
+}
+.title {
+  display: flex;
+  font-size: 3.75rem;
+  line-height: 68px;
+  color: #282728;
+  font-family: 'UniNeueLight', sans-serif;
+}
+.title p {
+  margin-top: 0;
+  margin-bottom: 63px;
+}
+strong  {
+  font-weight: bold;
+  font-family: "UniNeueBold", sans-serif;
+}
+@media screen and (max-width: 960px) and (min-width: 766px){
+  .title {
+    font-size: 3rem;
+  }
+  .title p {
+    margin-bottom: 43px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    line-height: 45px;
+  }
+  .title p {
+    margin-bottom: 43px;
+  }
+}
+// Laptop
+@media screen and (max-height:600px){
+  .title {
+    font-size: 2.5rem;
+    line-height: 48px;
+  }
+  .title p {
+    margin-bottom: 33px;
+  }
+}
+@media screen and (max-height:768px){
+  .title {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+  .title p {
+    margin-bottom: 43px;
+  }
+}
+@media screen and (max-height:800px) {
+  .title p {
+    margin-bottom: 43px;
+  }
+}

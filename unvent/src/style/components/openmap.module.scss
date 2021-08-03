@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  width: 293px;
+}
+.wrapper img {
+  border-radius: 50px;
+  padding-right: 20px;
+}
+.wrapper button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@media screen and (max-width: 961px) and (min-width: 766px){
+  .wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .wrapper {
+    display: none;
+  }
+}

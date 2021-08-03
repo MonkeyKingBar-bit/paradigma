@@ -1,0 +1,129 @@
+.burgerBtn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  margin: 30px 100px 0 0;
+}
+.burgerBtn:before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.burgerBtn span {
+  position: absolute;
+  top: 9px;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  padding: 0;
+  color: transparent!important;
+}
+.burgerBtn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  border-radius: 15px;
+  transition: .4s;
+  top: 35px;
+}
+.menu {
+  position: fixed;
+  width: 70vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(-130%);
+}
+.menu.active {
+  transform: translateX(0);
+}
+.blur {
+  width: 100vw;
+  height: 100vh;
+  left: 70%;
+  backdrop-filter: blur(2px);
+  position: absolute;
+}
+.menu__content {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+ul li a:hover {
+  border-bottom: 1px solid #313d4b;
+}
+
+@media screen and (max-width:1166px) and (min-width: 960px){
+  .menu__content {
+    width: 70%;
+  }
+  .burgerBtn {
+    display: block;
+  }
+}
+@media screen and (max-width: 961px) and (min-width: 766px){
+  .contain {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+  }
+  .wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .contain {
+    display: none;
+  }
+  .burgerBtn {
+    display: block;
+    margin: 0 10px;
+  }
+  .wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-height:600px) {
+  .burgerBtn {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,154 @@
+@import "src/style/components/buttons";
+@import "../base/colors";
+
+.wrapper {
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  top: 30px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a:hover {
+  background-color: transparent;
+}
+.logo {
+  margin-right: 35px;
+}
+.item {
+  margin-right: 35px;
+}
+.item p {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  color: $color-primary;
+}
+strong {
+  font-family: "UniNeueHeavy", sans-serif;
+}
+
+.prof {
+  width: 293px;
+}
+.item:nth-child(3) {
+  display: flex;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.phone img {
+  height: 100%;
+  padding-right: 9px;
+}
+.phone p {
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 22px;
+  color: $color-primary;
+  font-family: "UniNeueHeavy",sans-serif;
+}
+.messengers {
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messengers a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messengers img {
+  margin-right: 5px;
+  transition: all 1s ease-out;
+}
+.messengers img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.contact {
+  margin-right: 0;
+}
+
+@media screen and (max-width:1615px) and (min-width: 1350px) {
+  .phone p {
+    font-size: 0.9375rem!important;
+  }
+  .logo, .item {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width:1351px) and (min-width: 1100px) {
+  .prof {
+    display: none;
+  }
+}
+@media screen and (max-width:1166px) and (min-width: 960px) {
+  .prof {
+    display: none;
+  }
+  .phone p {
+    font-size: 0.9375rem!important;
+  }
+  .logo, .item {
+    margin-right: 3px;
+  }
+}
+@media screen and (max-width: 961px) and (min-width: 766px){
+  .prof {
+    display: none;
+  }
+  .phone p {
+    font-size: 0.9375rem!important;
+  }
+  .logo, .item {
+    margin-right: 0px;
+  }
+  .menu__content {
+    width: 100%;
+  }
+  .contain {
+    display: none;
+  }
+  .logo {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .prof {
+    display: none;
+  }
+  .phone p {
+    font-size: 0.9375rem!important;
+  }
+  .logo, .item {
+    margin-right: 0;
+  }
+  .menu__content {
+    width: 100%;
+  }
+  .contain {
+    display: none;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .consultButton {
+    display: none;
+  }
+}
+// Laptop
+@media screen and (max-height:600px){
+  .wrapper {
+    top: 15px;
+  }
+}
